@@ -1,0 +1,25 @@
+nav{
+    // Size
+    height: 15vh;
+    width: 100%;
+    // Style
+    background-color: white;
+    // Display
+    @include flex-center;
+    .container{
+                // Size
+                width: 75%;
+                // Display
+                @include flex-between;
+                .div-title{
+                    // Size
+                    width: 25%;
+                    // Display
+                    @include flex-center;
+                    h1{
+                        // Style
+                        font-size: 24px;
+                    }
+                }
+    }
+}

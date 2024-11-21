@@ -1,0 +1,17 @@
+.div-navbar{
+            // Size
+            width: 40%;
+            // Display
+            margin-right: 10%;
+            ul{
+                // Display
+                @include flex-between;
+                li{
+                    a{
+                        // Style
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+}
