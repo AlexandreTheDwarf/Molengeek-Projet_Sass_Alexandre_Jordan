@@ -44,4 +44,46 @@ table {
 
 input {
   border-radius: 0;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  gap: 20px;
+}
+#services #titre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#services #titre span {
+  color: blue;
+}
+#services #titre button {
+  border-radius: 30px;
+  background-color: blue;
+}
+#services .cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#services .card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+#services .card svg {
+  margin-left: 1px;
 }/*# sourceMappingURL=style.css.map */
