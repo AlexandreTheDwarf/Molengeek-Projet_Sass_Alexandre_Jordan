@@ -185,4 +185,49 @@ header .container div button {
 #section-testimonial .container #testimonial-centre p {
   font-size: 12px;
   color: lightgray;
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .container {
+  height: 80%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact .container #contact-header {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact .container #contact-header span {
+  background-color: #E7F1FD;
+  color: #106EEA;
+  padding: 1% 2% 1% 2%;
+  border-radius: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .container #contact-header h3 {
+  color: #106EEA;
+  font-size: 24px;
+  font-weight: bold;
+}
+#contact .container #contact-header p {
+  font-size: 12px;
+  text-align: center;
+  width: 75%;
+  line-height: 1rem;
 }/*# sourceMappingURL=style.css.map */

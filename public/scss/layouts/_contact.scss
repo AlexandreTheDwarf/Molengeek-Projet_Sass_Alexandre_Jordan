@@ -1,0 +1,45 @@
+#contact{
+    // Size
+    height: 100vh;
+    width: 100%;
+    // Display
+    @include flex-center;
+    .container{
+        // Size
+        height: 80%;
+        width: 75%;
+        // Display
+        @include flex-col-between;
+        #contact-header{
+            // Size 
+            width: 50%;
+            height: 25%;
+            // Display
+            @include flex-col-between;
+            span{
+                // Style
+                background-color: $light-blue;
+                color: $dark-blue;
+                padding: 1% 2% 1% 2%;
+                border-radius: 15px;
+                font-size: 14px;
+                // Display
+                @include flex-center;
+            }
+            h3{
+                // Style
+                color: $dark-blue;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            p{
+                // Style
+                font-size: 12px;
+                text-align: center;
+                // Size
+                width: 75%;
+                line-height: 1rem;
+            }
+        }
+    }
+}
