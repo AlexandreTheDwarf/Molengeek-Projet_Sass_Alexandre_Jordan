@@ -1,0 +1,54 @@
+#checkServices {
+    background-color: red;
+    height: 65vh;
+    
+    display: flex; // Active Flexbox
+    flex-direction: column; // Organise les éléments verticalement
+    justify-content: center; // Centre verticalement
+    align-items: center; 
+    #titre{
+        margin-bottom: "40px";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button{
+            width: 20%;
+            border-radius: 30px;
+            border: #ffffff;
+
+        }
+        h1{
+            font-size: 30px;
+        }
+        span{
+            color: blue;
+        }
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+  
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        height: 170px;
+        text-align: center;
+  
+        p {
+          font-size: 14px;
+          color: #333;
+        }
+      }
+    }
+  }
+  
