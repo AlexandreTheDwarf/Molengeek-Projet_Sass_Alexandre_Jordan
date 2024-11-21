@@ -7,7 +7,7 @@
     .container{
         // Size
         height: 80%;
-        width: 75%;
+        width: 60%;
         // Display
         @include flex-col-between;
         #contact-header{
@@ -37,7 +37,7 @@
                 font-size: 12px;
                 text-align: center;
                 // Size
-                width: 75%;
+                width: 95%;
                 line-height: 1rem;
             }
         }

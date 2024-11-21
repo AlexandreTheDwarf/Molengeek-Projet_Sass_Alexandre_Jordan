@@ -66,13 +66,17 @@ input {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  height: 70%;
+  width: 100%;
 }
 #contact-table .card {
-  width: 22%;
+  width: 48%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #contact-table .card span {
   border-radius: 50%;
@@ -85,8 +89,104 @@ input {
 #contact-table .card span svg {
   fill: #106EEA;
 }
+#contact-table .card h4 {
+  opacity: 50%;
+  font-weight: bold;
+}
+#contact-table .card p {
+  font-size: 12px;
+}
 #contact-table #card-adress {
-  width: 45%;
+  width: 49%;
+  height: 35%;
+}
+#contact-table .card-container {
+  width: 49%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact-table #map-container {
+  width: 49%;
+  height: 60%;
+}
+#contact-table #map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+#contact-table #form-container {
+  width: 49%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#contact-table #form-container form {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contact-table #form-container form div {
+  width: 99%;
+}
+#contact-table #form-container form div input {
+  width: 49%;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+#contact-table #form-container form div input::-moz-placeholder {
+  font-size: 12px;
+  padding: 3px;
+}
+#contact-table #form-container form div input::placeholder {
+  font-size: 12px;
+  padding: 3px;
+}
+#contact-table #form-container form input {
+  width: 100%;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+#contact-table #form-container form input::-moz-placeholder {
+  font-size: 12px;
+  padding: 3px;
+}
+#contact-table #form-container form input::placeholder {
+  font-size: 12px;
+  padding: 3px;
+}
+#contact-table #form-container form textarea {
+  width: 100%;
+  height: 35%;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+#contact-table #form-container form textarea::-moz-placeholder {
+  font-size: 12px;
+  padding: 3px;
+}
+#contact-table #form-container form textarea::placeholder {
+  font-size: 12px;
+  padding: 3px;
+}
+#contact-table #form-container form button {
+  width: 35%;
+  height: 15%;
+}
+
+button {
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  background-color: #106EEA;
+  padding: 7px 10px 7px 10px;
+  color: whitesmoke;
 }
 
 nav {
@@ -154,14 +254,6 @@ header .container div h1 {
 header .container div h1 span {
   color: #106EEA;
 }
-header .container div button {
-  width: 30%;
-  border: none;
-  border-radius: 5px;
-  background-color: #106EEA;
-  padding: 7px 10px 7px 10px;
-  color: whitesmoke;
-}
 
 #section-testimonial {
   height: 40vh;
@@ -224,7 +316,7 @@ header .container div button {
 }
 #contact .container {
   height: 80%;
-  width: 75%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -256,6 +348,6 @@ header .container div button {
 #contact .container #contact-header p {
   font-size: 12px;
   text-align: center;
-  width: 75%;
+  width: 95%;
   line-height: 1rem;
 }/*# sourceMappingURL=style.css.map */

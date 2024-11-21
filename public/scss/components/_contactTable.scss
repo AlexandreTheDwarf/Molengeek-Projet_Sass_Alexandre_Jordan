@@ -4,11 +4,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    // Size
+    height: 70%;
+    width: 100%;
     .card{
         // Size
-        width: 22%;
+        width: 48%;
+        height: 100%;
         // Display
-        @include flex-col-between;
+        @include flex-col-evenly;
+        // Style
+        @include box-shadow;
         span{
             // Style
             border-radius: 50%;
@@ -20,9 +26,98 @@
                 fill: $dark-blue;
             }
         }
+        h4{
+            // Style
+            opacity: 50%;
+            font-weight: bold;
+        }
+        p{
+            // Style
+            font-size: 12px;
+        }
     }
     #card-adress{
         // Size
-        width: 45%;
+        width: 49%;
+        height: 35%;
+    }
+    .card-container{
+        // Size
+        width: 49%;
+        height: 35%;
+        // Display
+        @include flex-between;
+    }
+    #map-container{
+        // Size
+        width: 49%;
+        height: 60%;
+        iframe{
+            // Size
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #form-container{
+        // Size
+        width: 49%;
+        height: 60%;
+        // Display
+        @include flex-center;
+        // Style
+        @include box-shadow;
+        form{
+            // Size
+            width: 85%;
+            height: 85%;
+            // Display
+            @include flex-col-evenly;
+            div{
+                // Size
+                width: 99%;
+                input{
+                    // Size
+                    width: 49%;
+                    // Style
+                    border: solid 1px lightgray;
+                    padding: 5px;
+                    &::placeholder{
+                        // Style
+                        font-size: 12px;
+                        padding: 3px;
+                    }
+                }
+            }
+            input{
+                 // Size
+                 width: 100%;
+                 // Style
+                 border: solid 1px lightgray;
+                 padding: 5px;
+                 &::placeholder{
+                     // Style
+                     font-size: 12px;
+                     padding: 3px;
+                 }
+            }
+            textarea{
+                // Size
+                width: 100%;
+                height: 35%;
+                // Style
+                border: solid 1px lightgray;
+                padding: 5px;
+                &::placeholder{
+                    // Style
+                    font-size: 12px;
+                    padding: 3px;
+                }
+            }
+            button{
+                // Size
+                width: 35%;
+                height: 15%;
+            }
+        }
     }
 }
