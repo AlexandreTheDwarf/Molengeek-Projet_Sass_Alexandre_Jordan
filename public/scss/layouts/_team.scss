@@ -1,10 +1,10 @@
+
 $primary-color: #5a67d8;
 $text-color: #555;
 $background-color: #f9f9f9;
+
 .team-section {
-  padding: 50px ;
   text-align: center;
- background-color: red;
 
   .team-header {
     margin-bottom: 30px;
@@ -25,14 +25,19 @@ $background-color: #f9f9f9;
   }
 
   .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    justify-items: center;
+    display: flex; /* Utiliser flexbox pour centrer le contenu */
+    flex-wrap: wrap; /* Pour gérer l'affichage des membres sur plusieurs lignes */
+    gap: 20px; /* Ajuster ici l'espacement maximum */
+    justify-content: center; /* Centre horizontalement tous les membres de l'équipe */
+    align-items: center; /* Centre verticalement */
+    padding: 20px; /* Ajoute un léger padding autour du container */
+    background-color: #5a67d8;
+    width: fit-content; /* S'adapte au contenu */
+    margin: 0 auto; /* Centre le bloc de la grille horizontalement */
 
     .team-member {
       background: #fff;
-      
+      border-radius: 10px;
       padding: 20px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       text-align: center;
@@ -40,7 +45,6 @@ $background-color: #f9f9f9;
       img {
         width: 100%;
         max-width: 150px;
-        
         margin-bottom: 15px;
       }
 
