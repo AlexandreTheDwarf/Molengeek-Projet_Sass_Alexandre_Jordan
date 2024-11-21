@@ -14,10 +14,12 @@
         gap: 20px;
         span{
             color: blue;
-        } 
+        }
+       
         button{
             border-radius: 30px;
-            background-color: blue;
+            background-color:#b9c7bd;
+            color: blue;
         }
     }
 
@@ -45,6 +47,9 @@
             
             
         }
+        h1{
+            font-weight: bold;
+        } 
     }
 }
 
