@@ -44,4 +44,49 @@ table {
 
 input {
   border-radius: 0;
+}
+
+.team-section {
+  padding: 50px;
+  text-align: center;
+  background-color: red;
+}
+.team-section .team-header {
+  margin-bottom: 30px;
+}
+.team-section .team-header h2 {
+  font-size: 2.5rem;
+  color: #555;
+}
+.team-section .team-header h2 span {
+  color: #5a67d8;
+}
+.team-section .team-header p {
+  color: #555;
+  font-size: 1rem;
+}
+.team-section .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+.team-section .team-grid .team-member {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.team-section .team-grid .team-member img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+.team-section .team-grid .team-member h3 {
+  font-size: 1.2rem;
+  color: #555;
+}
+.team-section .team-grid .team-member p {
+  font-size: 1rem;
+  color: gray;
 }/*# sourceMappingURL=style.css.map */
