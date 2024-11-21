@@ -1,5 +1,5 @@
 #checkServices {
-    background-color: red;
+    
     height: 65vh;
     
     display: flex; // Active Flexbox
@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 5px;
         button{
             width: 20%;
             border-radius: 30px;

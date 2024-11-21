@@ -47,7 +47,6 @@ input {
 }
 
 #checkServices {
-  background-color: red;
   height: 65vh;
   display: flex;
   flex-direction: column;
@@ -60,6 +59,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 #checkServices #titre button {
   width: 20%;
