@@ -94,7 +94,6 @@ input {
   text-align: center;
 }
 #checkServices .card-container .card img, #checkServices .card-container .card svg {
-  background-color: 255, 255, 255, 255;
   display: block;
   margin: 0 auto;
 }
