@@ -137,4 +137,107 @@ input {
     height: auto;
     padding: 15px;
   }
+}
+
+#checkServices {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+#checkServices #titre {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#checkServices #titre button {
+  width: 20%;
+  border-radius: 30px;
+  border: #ffffff;
+  color: blue;
+}
+#checkServices #titre h1 {
+  font-size: 30px;
+}
+#checkServices #titre span {
+  color: blue;
+}
+#checkServices .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+#checkServices .card-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 170px;
+  text-align: center;
+}
+#checkServices .card-container .card .background {
+  background-color: #e7f1fd;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#checkServices .card-container .card img, #checkServices .card-container .card svg {
+  display: block;
+  margin: 0 auto;
+}
+#checkServices .card-container .card p {
+  font-size: 14px;
+  color: #333;
+}
+@media (max-width: 768px) {
+  #checkServices #titre h1 {
+    font-size: 24px;
+  }
+  #checkServices .card-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  #checkServices .card-container .card {
+    width: 180px;
+    height: 160px;
+  }
+}
+@media (max-width: 576px) {
+  #checkServices {
+    height: auto;
+    padding: 1rem;
+  }
+  #checkServices #titre {
+    margin-bottom: 20px;
+  }
+  #checkServices #titre h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #checkServices #titre button {
+    width: 50%;
+  }
+  #checkServices .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #checkServices .card-container .card {
+    width: 100%;
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
