@@ -118,6 +118,28 @@ body {
     margin-right: 30%;
   }
 }
+@media (min-width: 1080px) {
+  .div-navbar ul li {
+    position: relative;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding-bottom: 2px;
+  }
+  .div-navbar ul li:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    left: 50%;
+    background-color: #106EEA;
+    transition: 2s;
+  }
+  .div-navbar ul li:hover:before {
+    width: 100%;
+    left: 0;
+  }
+}
 #contact-table {
   display: flex;
   flex-wrap: wrap;
@@ -267,6 +289,13 @@ button {
   align-items: center;
 }
 
+@media (min-width: 1080px) {
+  button:hover {
+    background-color: whitesmoke;
+    color: #106EEA;
+    border: solid 1px #106EEA;
+  }
+}
 nav {
   height: 15vh;
   width: 100%;
