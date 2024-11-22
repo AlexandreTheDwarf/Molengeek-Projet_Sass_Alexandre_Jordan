@@ -87,9 +87,15 @@ root/
 
 ## Améliorations possibles
 
+### Pour Alexandre  
+
+- Explorer les moyens de personnaliser et mieux utiliser Bootstrap.
+- Améliorer la gestion des conflits lors du travail collaboratif, même si on en a eu presque aucun.
+
+### Pour Jordan 
+
 - Finaliser certains aspects du template qui n'ont pas pu être terminés.
-- Explorer d'autres moyens de personnaliser Bootstrap.
-- Améliorer la gestion des conflits lors du travail collaboratif.
+- Améliorer le responsive qui a bug suite a un probleme de résolution du au materiel utilisé.
 
 
 
