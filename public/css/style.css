@@ -97,10 +97,11 @@ input {
   background-color: #e7f1fd;
   height: 70px;
   width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #checkServices .card-container .card img, #checkServices .card-container .card svg {
-  height: 70px;
-  width: 60px;
   display: block;
   margin: 0 auto;
 }

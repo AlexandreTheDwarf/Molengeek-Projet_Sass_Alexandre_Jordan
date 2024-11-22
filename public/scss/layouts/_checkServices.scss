@@ -54,10 +54,12 @@
         background-color: #e7f1fd;
         height: 70px;
         width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       img, svg {
-        height: 70px;
-        width: 60px;
+        
         display: block;
         margin: 0 auto;
         
