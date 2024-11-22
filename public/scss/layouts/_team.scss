@@ -4,11 +4,19 @@
   text-align: center;
    margin-top: 10px;
   .team-header {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
     button{
-      width: 70px;;
+      width: 10%;
+      height: 35px;  
+      background-color:$light-blue;
       border-radius: 50px;
       border: 0px;
+      
       
     }
     .span-button{
