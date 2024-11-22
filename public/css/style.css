@@ -58,12 +58,15 @@ input {
   border-radius: 50px;
   border: 0px;
 }
+.team-section .team-header .span-button {
+  color: blue;
+}
 .team-section .team-header h2 {
   font-size: 2.5rem;
   color: #555;
 }
 .team-section .team-header h2 span {
-  color: #5a67d8;
+  color: blue;
 }
 .team-section .team-header p {
   color: #555;
