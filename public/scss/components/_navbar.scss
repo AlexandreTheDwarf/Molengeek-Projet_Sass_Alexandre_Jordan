@@ -81,3 +81,29 @@
         margin-right: 30%;
     }
 }
+
+@media (min-width:1080px) {
+  .div-navbar {
+    ul {
+      li {
+        position: relative;
+        max-width: max-content;
+        padding-bottom: 2px;
+        &:before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 0%;
+          height: 3px;
+          left: 50%;
+          background-color: $dark-blue;
+          transition: 2s;
+        }
+        &:hover:before{
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
