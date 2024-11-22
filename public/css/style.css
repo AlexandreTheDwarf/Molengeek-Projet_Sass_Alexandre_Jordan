@@ -92,4 +92,40 @@ input {
 }
 #services .card h1 {
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  #services {
+    height: auto;
+  }
+  #services .cards-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+  #services .cards-container .card {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  #services {
+    height: auto;
+    padding: 10px;
+  }
+  #services #titre button {
+    width: 70%;
+  }
+  #services #titre h1 {
+    font-size: 20px;
+  }
+  #services .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #services .cards-container .card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
