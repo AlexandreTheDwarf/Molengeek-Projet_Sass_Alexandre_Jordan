@@ -45,6 +45,30 @@
 }
 
 @media (max-width: 425px){
-    
+    #contact{
+        .container{
+            width: 95%;
+            #contact-header{
+                width: 75%;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    } 
 }
 
+@media (min-width: 425px) and (max-width:768px){
+    #contact{
+        .container{
+            height: 95%;
+            width: 95%;
+            #contact-header{
+                width: 75%;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}
