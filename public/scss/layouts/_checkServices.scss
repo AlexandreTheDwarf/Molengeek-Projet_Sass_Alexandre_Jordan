@@ -1,6 +1,4 @@
-// Variables pour les breakpoints
-$breakpoint-tablet: 768px;
-$breakpoint-phone: 576px;
+@import "../abstracts/variables";
 
 #checkServices {
   height: 65vh;
