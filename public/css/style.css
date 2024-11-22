@@ -46,6 +46,89 @@ input {
   border-radius: 0;
 }
 
+.team-section {
+  text-align: center;
+  margin-top: 10px;
+}
+.team-section .team-header {
+  margin-bottom: 30px;
+}
+.team-section .team-header button {
+  width: 70px;
+  border-radius: 50px;
+  border: 0px;
+}
+.team-section .team-header .span-button {
+  color: blue;
+}
+.team-section .team-header h2 {
+  font-size: 2.5rem;
+  color: #555;
+}
+.team-section .team-header h2 span {
+  color: blue;
+}
+.team-section .team-header p {
+  color: #555;
+  font-size: 1rem;
+}
+.team-section .team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.team-section .team-grid .team-member {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.team-section .team-grid .team-member img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+.team-section .team-grid .team-member h3 {
+  font-size: 1.2rem;
+  color: #555;
+}
+.team-section .team-grid .team-member p {
+  font-size: 1rem;
+  color: gray;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .team-section .team-header h2 {
+    font-size: 2rem;
+  }
+  .team-section .team-header p {
+    font-size: 0.9rem;
+  }
+  .team-section .team-grid {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  .team-section .team-grid .team-member {
+    padding: 15px;
+  }
+  .team-section .team-grid .team-member img {
+    max-width: 120px;
+  }
+  .team-section .team-grid .team-member h3 {
+    font-size: 1.1rem;
+  }
+  .team-section .team-grid .team-member p {
+    font-size: 0.9rem;
+  }
+}
+
 #services {
   display: flex;
   flex-direction: column;
