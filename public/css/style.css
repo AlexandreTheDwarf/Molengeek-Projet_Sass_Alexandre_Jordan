@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -65,16 +64,15 @@ input {
   font-size: 1rem;
 }
 .team-section .team-grid {
-  display: flex; /* Utiliser flexbox pour centrer le contenu */
-  flex-wrap: wrap; /* Pour gérer l'affichage des membres sur plusieurs lignes */
-  gap: 20px; /* Ajuster ici l'espacement maximum */
-  justify-content: center; /* Centre horizontalement tous les membres de l'équipe */
-  align-items: center; /* Centre verticalement */
-  padding: 20px; /* Ajoute un léger padding autour du container */
-  background-color: #5a67d8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   width: -moz-fit-content;
-  width: fit-content; /* S'adapte au contenu */
-  margin: 0 auto; /* Centre le bloc de la grille horizontalement */
+  width: fit-content;
+  margin: 0 auto;
 }
 .team-section .team-grid .team-member {
   background: #fff;
