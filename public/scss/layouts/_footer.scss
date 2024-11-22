@@ -1,0 +1,43 @@
+footer{
+    // Size
+    height: 10vh;
+    width: 100%;
+    // Style
+    background-color: #E7F1FD;
+    // Display
+    @include flex-center;
+    .container{
+                // Size
+                width: 75%;
+                // Display
+                @include flex-between;
+                #div-left{
+                    // Size
+                    width: 35%;
+                    // Display
+                    @include flex-center;
+                    p{
+                        // Style
+                        font-size: 14px;
+                        span{
+                            // Style
+                            font-weight: bold;
+                        }
+                    }
+                }
+                #div-right{
+                    // Size
+                    width: 35%;
+                    // Display
+                    @include flex-center;
+                    p{
+                        // Style
+                        font-size: 14px;
+                        span{
+                            // Style
+                            color: $dark-blue;
+                        }
+                    }
+                }
+    }
+}
