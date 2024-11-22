@@ -36,25 +36,35 @@
         gap: 20px; 
         flex-wrap: wrap;
     }
-
     .card {
         display: flex;
-        flex-direction: column; 
-        gap: 5px; 
+        flex-direction: column; // Aligne le contenu horizontalement
+        align-items: flex-start; // Centre verticalement le contenu
+        justify-content: flex-start; // Aligne tout à gauche
+        gap: 10px; // Ajoute un espace entre le SVG et le reste du contenu
         background: white; 
         padding: 10px; 
         border-radius: 5px; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
         height: 160px;
-
+    
         svg {
-            margin-left: 1px;
+            flex-shrink: 0; // Empêche le SVG de se réduire
+            width: 50px; 
+            height: 50px; 
+            margin: 0; // Supprime les marges
         }
-
+    
         h1 {
             font-weight: bold;
-        } 
+            margin: 0; // Supprime les marges inutiles
+        }
+    
+        p {
+            margin: 0; // Assure que les paragraphes sont bien alignés
+        }
     }
+    
 
     // Media query pour tablette
     @media (max-width: $breakpoint-tablet) {
