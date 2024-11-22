@@ -35,7 +35,7 @@
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
-
+     
     .card {
       display: flex;
       flex-direction: column;
@@ -50,11 +50,17 @@
       width: 200px;
       height: 170px;
       text-align: center;
-
+      .background{
+        background-color: #e7f1fd;
+        height: 70px;
+        width: 70px;
+      }
       img, svg {
-        
+        height: 70px;
+        width: 60px;
         display: block;
         margin: 0 auto;
+        
       }
 
       p {
