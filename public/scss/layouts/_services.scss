@@ -1,4 +1,6 @@
+@import "../abstracts/variables";
 #services {
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -22,10 +24,12 @@
 
         button {
             border-radius: 30px;
-            
-
+            width: 100px;
+            height: 35px;  
+            background-color:$light-blue;
             border: none;
-            color: blue;
+            color: rgb(168, 168, 168);
+
         }
     }
 
