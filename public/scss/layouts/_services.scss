@@ -1,6 +1,5 @@
 // Variables pour les breakpoints
-$breakpoint-tablet: 768px;
-$breakpoint-phone: 576px;
+@import '../abstracts/variables';
 
 #services {
     display: flex;
@@ -10,6 +9,7 @@ $breakpoint-phone: 576px;
     height: 30vh;
     gap: 20px;
     margin-top: 30px;
+
 
     #titre {
         text-align: center;
