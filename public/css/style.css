@@ -54,7 +54,7 @@ input {
   align-items: center;
 }
 #checkServices #titre {
-  margin-bottom: "40px";
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,6 +81,8 @@ input {
 #checkServices .card-container .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -91,7 +93,48 @@ input {
   height: 170px;
   text-align: center;
 }
+#checkServices .card-container .card img, #checkServices .card-container .card svg {
+  display: block;
+  margin: 0 auto;
+}
 #checkServices .card-container .card p {
   font-size: 14px;
   color: #333;
+}
+@media (max-width: 768px) {
+  #checkServices #titre h1 {
+    font-size: 24px;
+  }
+  #checkServices .card-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  #checkServices .card-container .card {
+    width: 180px;
+    height: 160px;
+  }
+}
+@media (max-width: 576px) {
+  #checkServices {
+    height: auto;
+    padding: 1rem;
+  }
+  #checkServices #titre {
+    margin-bottom: 20px;
+  }
+  #checkServices #titre h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #checkServices #titre button {
+    width: 50%;
+  }
+  #checkServices .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #checkServices .card-container .card {
+    width: 100%;
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

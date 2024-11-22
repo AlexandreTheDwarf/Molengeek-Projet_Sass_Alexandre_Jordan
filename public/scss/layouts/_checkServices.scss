@@ -1,55 +1,113 @@
-#checkServices {
-    
-    height: 65vh;
-    
-    display: flex; // Active Flexbox
-    flex-direction: column; // Organise les éléments verticalement
-    justify-content: center; // Centre verticalement
-    align-items: center; 
-    #titre{
-        margin-bottom: "40px";
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        button{
-            width: 20%;
-            border-radius: 30px;
-            border: #ffffff;
+// Variables pour les breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 576px;
 
-        }
-        h1{
-            font-size: 30px;
-        }
-        span{
-            color: blue;
-        }
+#checkServices {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #titre {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    button {
+      width: 20%;
+      border-radius: 30px;
+      border: #ffffff;
     }
-    .card-container {
+
+    h1 {
+      font-size: 30px;
+    }
+
+    span {
+      color: blue;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+
+    .card {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      gap: 1rem;
-      margin: 1rem 0;
-  
-      .card {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 200px;
-        height: 170px;
-        text-align: center;
-  
-        p {
-          font-size: 14px;
-          color: #333;
-        }
+      align-items: center;
+      gap: 10px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      height: 170px;
+      text-align: center;
+
+      img, svg {
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 14px;
+        color: #333;
       }
     }
   }
-  
+
+  // Media query pour tablette
+  @media (max-width: $breakpoint-tablet) {
+    #titre h1 {
+      font-size: 24px;
+    }
+
+    .card-container {
+      flex-wrap: wrap; // Permet de passer les cartes sur plusieurs lignes
+      gap: 0.5rem;
+
+      .card {
+        width: 180px;
+        height: 160px;
+      }
+    }
+  }
+
+  // Media query pour téléphone
+  @media (max-width: $breakpoint-phone) {
+    height: auto;
+    padding: 1rem;
+
+    #titre {
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      button {
+        width: 50%; // Bouton plus grand sur mobile
+      }
+    }
+
+    .card-container {
+      flex-direction: column; // Toutes les cartes empilées
+      align-items: center;
+
+      .card {
+        width: 100%; // Prend toute la largeur
+        max-width: 300px;
+      }
+    }
+  }
+}
