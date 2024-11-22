@@ -46,6 +46,10 @@ input {
   border-radius: 0;
 }
 
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
 .div-navbar {
   width: 40%;
   margin-right: 10%;
@@ -55,12 +59,65 @@ input {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  padding: 0;
 }
 .div-navbar ul li a {
   text-decoration: none;
   color: black;
+  font-size: 14px;
+}
+.div-navbar .burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.div-navbar .burger-menu span {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  margin: 3px 0;
 }
 
+@media (max-width: 768px) {
+  .div-navbar {
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .div-navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .div-navbar ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .div-navbar ul li a {
+    font-size: 16px;
+  }
+  .div-navbar .burger-menu {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+  }
+  .div-navbar ul.active {
+    display: flex;
+  }
+}
+@media (max-width: 426px) {
+  .burger-menu {
+    margin-right: 30%;
+  }
+}
 #contact-table {
   display: flex;
   flex-wrap: wrap;
@@ -81,7 +138,7 @@ input {
 #contact-table .card span {
   border-radius: 50%;
   border: dotted 2px #106EEA;
-  padding: 2%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +168,7 @@ input {
 #contact-table #map-container {
   width: 49%;
   height: 60%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #contact-table #map-container iframe {
   width: 100%;
@@ -255,6 +313,23 @@ header .container div h1 span {
   color: #106EEA;
 }
 
+@media (max-width: 425px) {
+  header {
+    height: 60vh;
+  }
+  header .container {
+    width: 75%;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  header .container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 #section-testimonial {
   height: 40vh;
   width: 100%;
@@ -305,8 +380,15 @@ header .container div h1 span {
 #section-testimonial .container #testimonial-centre p {
   font-size: 12px;
   color: lightgray;
+  text-align: center;
 }
 
+@media (max-width: 425px) {
+  #testimonial-centre p {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+}
 #contact {
   height: 100vh;
   width: 100%;
@@ -327,7 +409,7 @@ header .container div h1 span {
   height: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 #contact .container #contact-header span {
@@ -350,4 +432,44 @@ header .container div h1 span {
   text-align: center;
   width: 95%;
   line-height: 1rem;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #E7F1FD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container #div-left {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container #div-left p {
+  font-size: 14px;
+}
+footer .container #div-left p span {
+  font-weight: bold;
+}
+footer .container #div-right {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container #div-right p {
+  font-size: 14px;
+}
+footer .container #div-right p span {
+  color: #106EEA;
 }/*# sourceMappingURL=style.css.map */

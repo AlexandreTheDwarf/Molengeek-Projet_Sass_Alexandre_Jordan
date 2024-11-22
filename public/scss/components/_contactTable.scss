@@ -19,7 +19,7 @@
             // Style
             border-radius: 50%;
             border: dotted 2px $dark-blue;
-            padding: 2%;
+            padding: 10px;
             // Display
             @include flex-center;
             svg{
@@ -52,6 +52,7 @@
         // Size
         width: 49%;
         height: 60%;
+        @include box-shadow;
         iframe{
             // Size
             width: 100%;
